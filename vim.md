@@ -2,11 +2,18 @@
 
 目录
 
-1. [光标移动](#section1)
-2. [插入模式 - 插入/追加文本](#section2)
-3. [Third Example](#third-example)
+1. [光标移动](#cursor-movement)
+2. [插入模式 - 插入/追加文本](#insert-mode)
+3. [编辑](#editing)
+4. [选择文本（可视化模式）](#marking-text)
+5. [可视化模式命令](#visual-commands)
+6. [剪切, 复制, 粘贴](#cut-and-paste)
+7. [退出](#exiting)
+8. [查找/替换](#search-and-replace)
+9. [多文件](#working-with-multiple-files)
+10. [页签](#tabs)
 
-<div id='section1'>
+<div id='cursor-movement'>
 ### 光标移动
 
 命令 | 说明
@@ -29,7 +36,7 @@
 
 > **Tip** 命令前追加数字表示命令的重复次数, 比如 `4j` 表示向下移动四行
 
-<div id='section2'>
+<div id='insert-mode'>
 ### 插入模式 - 插入/追加文本
 
 命令 | 说明
@@ -43,6 +50,7 @@
 `ea` | 从当前单词末尾开始插入
 `Esc` | 退出插入模式
 
+<div id='editing'>
 ### 编辑
 
 命令 | 说明
@@ -59,6 +67,7 @@
 `Ctrl + r` | 重复
 `.` | 再次执行上个命令
 
+<div id='marking-text'>
 ### 选择文本（可视化模式）
 
 命令 | 说明
@@ -75,6 +84,7 @@
 `iB` | 选择被 {} 包裹的区域 (不含花括号)
 `Esc` | 退出可视化模式
 
+<div id='visual-commands'>
 ### 可视化模式命令
 
 命令 | 说明
@@ -85,6 +95,7 @@
 `d` | 剪切
 `~` | 大小写切换
 
+<div id='cut-and-paste'>
 ### 剪切, 复制, 粘贴
 
 命令 | 说明
@@ -102,6 +113,7 @@
 `d$` | 剪切, 从光标位置到行末 (同D)
 `x` | 剪切当前字符
 
+<div id='exiting'>
 ### 退出
 
 命令 | 说明
@@ -111,6 +123,7 @@
 `:q` | 退出 (修改未保存时警告)
 `:q!` 或 `ZQ` | 不保存强制退出
 
+<div id='search-and-replace'>
 ### 查找/替换
 
 命令 | 说明
@@ -122,6 +135,7 @@
 `:%s/old/new/g` | 替换全部
 `:%s/old/new/gc` | (逐个) 替换
 
+<div id='working-with-multiple-files'>
 ### 多文件
 
 命令 | 说明
@@ -141,6 +155,7 @@
 `Ctrl + wj` | 切换到下侧分栏 (水平分栏)
 `Ctrl + wk` | 切换到上侧分栏 (水平分栏)
 
+<div id='tabs'>
 ### 页签
 
 命令 | 说明
